@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>金库KTV 电子菜单</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="screen-orientation" content="portrait">
+  <meta name="full-screen" content="yes">
+  <meta name="browsermode" content="application">
+  <meta name="x5-orientation" content="portrait">
+  <meta name="x5-fullscreen" content="true">
+  <meta name="x5-page-mode" content="app">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="MobileOptimized" content="320">
+  <link rel="stylesheet" href="../dist/css/swiper.min.css">
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+      height:100%;
+      overflow: hidden;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      float: right;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .swiper-container img{
+      width: 100%;
+      max-height: 100%;
+      min-height: 100%;
+      max-width: 100%:;
+    }
+  </style>
+</head>
+<body>
+  <!-- menu1 -->
+  <div class="swiper-container" id = "menu1">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="../dist/i/1_1.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="../dist/i/1_2.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="../dist/i/1_3.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="../dist/i/2_1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="../dist/i/3_1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="../dist/i/3_2.jpg" alt=""></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <script src="../dist/js/swiper.min.js"></script>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
+</html>
