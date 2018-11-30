@@ -13,74 +13,128 @@
   <meta name="x5-page-mode" content="app">
   <meta name="HandheldFriendly" content="true">
   <meta name="MobileOptimized" content="320">
+  <link rel="stylesheet" href="../dist/css/menu.css">
   <link rel="stylesheet" href="../dist/css/swiper.min.css">
+  <link rel="stylesheet" href="../dist/css/swiper.css">
+  <link rel="stylesheet" href="../dist/css/slider.css">
   <style>
-    html, body {
-      position: relative;
-      height: 100%;
-      overflow: hidden;
-    }
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color:#000;
-      margin: 0;
-      padding: 0;
-      height:100%;
-      overflow: hidden;
-    }
-    .swiper-container {
-      width: 100%;
-      height: 100%;
-      float: right;
-    }
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
-    .swiper-container img{
-      width: 100%;
-      max-height: 100%;
-      min-height: 100%;
-      max-width: 100%:;
-    }
+
   </style>
 </head>
 <body>
-  <!-- menu1 -->
-  <div class="swiper-container" id = "menu1">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="../dist/i/1_1.jpeg" alt=""></div>
-      <div class="swiper-slide"><img src="../dist/i/1_2.jpeg" alt=""></div>
-      <div class="swiper-slide"><img src="../dist/i/1_3.jpeg" alt=""></div>
-      <div class="swiper-slide"><img src="../dist/i/2_1.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="../dist/i/3_1.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="../dist/i/3_2.jpg" alt=""></div>
+    <nav id="menu" class="menu">
+    <h2 class="menu-section-title">Menu</h2>
+    <section class="menu-section">
+        <h3 class="menu-section-title"></h3>
+        <ul class="menu-section-list">
+          <li class="cate">酒类</li>
+          <li class="cate">热饮</li>
+          <li class="cate">软饮</li>
+          <li class="cate">威士忌</li>
+          <li class="cate">冷饮</li>
+          <li class="cate">小吃</li>
+        </ul>
+      </section>
+  </nav>
+
+
+<!--   <div id="menu" class="menu">
+    <div class="inner">
+      <div class="cate">酒类<img src="../dist/i/label.png" alt=""></div>
+      <div class="cate">热饮<img src="../dist/i/label.png" alt=""></div>
+      <div class="cate">软饮<img src="../dist/i/label.png" alt=""></div>
+      <div class="cate">威士忌<img src="../dist/i/label.png" alt=""></div>
+      <div class="cate">冷饮<img src="../dist/i/label.png" alt=""></div>
+      <div class="cate">小吃<img src="../dist/i/label.png" alt=""></div>
+      <div class="cate"></div>
+      <div class="cate"></div>
+      <div class="cate"></div>
+      <div class="cate"></div>
     </div>
-    <div class="swiper-pagination"></div>
-  </div>
+  </div> -->
+  <!-- menu1 -->
+
+  <main id="panel">
+    <header>
+      <!-- <button class="toggle-button">☰</button> -->
+      <button class="btn-hamburger js-slideout-toggle">
+          <span class="tooltip shake">打开左侧分类目录</span>
+      </button>
+    </header>
+      <div class="swiper-container" id = "menu1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../dist/i/1_1.jpeg" alt=""></div>
+          <div class="swiper-slide"><img src="../dist/i/1_2.jpeg" alt=""></div>
+          <div class="swiper-slide"><img src="../dist/i/1_3.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <!-- menu2 -->
+      <div class="swiper-container" id = "menu2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../dist/i/2_1.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+
+      <!-- menu3 -->
+      <div class="swiper-container" id = "menu3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../dist/i/3_1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../dist/i/3_2.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <!-- menu4 -->
+      <div class="swiper-container" id = "menu4">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../dist/i/4_1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../dist/i/4_2.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <!-- menu5 -->
+      <div class="swiper-container" id = "menu5">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../dist/i/5_1.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+
+      <!-- menu6 -->
+      <div class="swiper-container" id = "menu6">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../dist/i/6_1.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+  </main>
+
   <script src="../dist/js/swiper.min.js"></script>
+  <script src="../dist/js/slideout.min.js"></script>
+  <script src="../dist/js/index.js"></script>
+
 
   <script>
-    var swiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
+
   </script>
 </body>
 </html>
