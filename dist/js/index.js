@@ -10,27 +10,8 @@ var swiper = new Swiper('.swiper-container', {
   },
 });
 
-// var $menu = document.getElementById('menu');
-// var hideOrShow = function(e){
-//   $menu.classList.toggle('menu_show');
-// }
-// $menu.addEventListener("click",function(e){hideOrShow(e)},true);
-
-
 var $swipers = document.querySelectorAll(".swiper-container");
-// var $cates = document.querySelectorAll(".menu .cate");
-// var showDetails = function(i,e){
-//   console.log('showDetails' + i)
-//   for (let i = 0; i < $swipers.length; i++) {
-//     $swipers[i].style.display = "none";
-//   }
-//   $swipers[i].style.display = "block";
-//   e.stopPropagation();
-// }
-// for (let i = 0; i < $cates.length; i++) {
-//   $cates[i].addEventListener("click",(e) => {showDetails(i,e)},true);
-// }
-
+$swipers[0].style.display = "block";
 
 var showDetails = function(i,e){
   console.log('showDetails' + i)
